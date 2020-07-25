@@ -20,7 +20,7 @@
 - [CAVEATS](#caveats)
 - [SEE ALSO](#see-also)
 - [VERSION](#version)
-- [AUTHOR](#author)
+- [AUTHORS](#authors)
 - [COPYRIGHT AND LICENSE](#copyright-and-license)
 
 <!-- tocstop -->
@@ -58,7 +58,7 @@ const foo = options.foo ?? ''
 This is a [Babel](https://babeljs.io/)
 [plugin](https://babeljs.io/docs/plugins/) which inlines calls to selected
 functions within the scope in which the functions are declared. Only functions
-which contain a single return statement are inlined. Arguments passed to
+which consist of a single return statement are inlined. Arguments passed to
 inlined functions are substituted for the corresponding parameters in the
 function body and (by default) the original function is removed.
 
@@ -274,9 +274,9 @@ The following NPM scripts are available:
 
 - inlining may bloat your code
 - inlining may not speed things up and may even slow things down<sup>1</sup>
-- only works with functions that have a single return statement and simple (i.e. non-destructuring) parameters: keep things simple
+- only works with functions that are single return statements with simple (i.e. non-destructuring) parameters: keep things simple
 
-<sup>1</sup> Particularly on v8, which may have a better idea of what should be
+<sup>1</sup> Particularly on V8, which may have a better idea of what should be
 inlined when, and the memory/speed tradeoffs, than the developer.
 
 # SEE ALSO
@@ -287,10 +287,10 @@ inlined when, and the memory/speed tradeoffs, than the developer.
 
 1.0.1
 
-# AUTHOR
+# AUTHORS
 
-- [Emile Cantin](https://github.com/emilecantin)
-- [chocolateboy](https://github.com/chocolateboy) - maintainer
+- [chocolateboy](https://github.com/chocolateboy)
+- [Emile Cantin](https://github.com/emilecantin) (original version)
 
 # COPYRIGHT AND LICENSE
 
